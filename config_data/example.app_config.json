@@ -1,0 +1,8 @@
+{
+  "gasUrl": "https://script.google.com/macros/s/blablabla/exec",
+  "masterSpreadsheetUrl": "https://docs.google.com/spreadsheets/d/xxxxxxx/edit#gid=xxxxxxx",
+  "serviceAccountKeyExists": true,
+  "isGasAuthRequired": false,
+  "googleDriveFolderId": "GOOGLE_DRIVE_FOLDER_ID",
+  "googleDriveConfigured": true
+}

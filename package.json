@@ -1,27 +1,13 @@
 {
-  "name": "hapi-quickstart",
-  "version": "1.0.0",
-  "description": "hapi quickstart for Render",
-  "main": "server.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/render-examples/hapi-quickstart.git"
-  },
-  "keywords": [
-    "hapi",
-    "render",
-    "deployment"
-  ],
-  "author": "Render Developers",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/render-examples/hapi-quickstart/issues"
-  },
-  "homepage": "https://github.com/render-examples/hapi-quickstart#readme",
   "dependencies": {
-    "@hapi/hapi": "^20.0.0",
-    "@hapi/inert": "^6.0.2",
-    "hapi-pino": "^8.2.0"
+    "@hapi/hapi": "^21.4.0",
+    "@hapi/inert": "^7.1.0",
+    "archiver": "^7.0.1",
+    "axios": "^1.9.0",
+    "fs-extra": "^11.3.0",
+    "googleapis": "^149.0.0",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.1.0",
+    "yauzl": "^3.2.0"
   }
 }

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manajemen Data Makanan Indonesia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold text-success"
+          href="#"
+          id="homeBrandLink"
+        >
+          <i class="bi bi-egg-fried"></i> Indonesian Food Data Manager
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                id="dataManagementLink"
+                >Manajemen Data</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="trainingImageManagementLink"
+                >Gambar Latih</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="modelManagementLink"
+                >Manajemen Model</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-secondary"
+                id="settingsButton"
+                data-bs-toggle="modal"
+                data-bs-target="#settingsModal"
+              >
+                <i class="bi bi-gear-fill"></i> Pengaturan Server
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-4">
+      <div id="dataManagementArea">
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-success">
+                  Statistik Gizi Rata-rata per Daerah (dari Server)
+                </h5>
+                <div id="regionalNutrientStatsArea">
+                  <p id="regionalNutrientStatsPlaceholder" class="text-muted">
+                    Memuat statistik regional atau data tidak tersedia...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="card border-0 shadow-sm p-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h4>Statistik Data Spreadsheet (dari Server)</h4>
+                <div>
+                  <span class="badge bg-light text-dark p-2 me-1"
+                    >Scrap: <span id="statScrapCount">0</span> baris</span
+                  >
+                  <span class="badge bg-light text-dark p-2 me-1"
+                    >Cache: <span id="statCacheCount">0</span> baris</span
+                  >
+                  <span class="badge bg-light text-dark p-2"
+                    >Result: <span id="statResultCount">0</span> baris</span
+                  >
+                </div>
+              </div>
+              <hr class="mt-0" />
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <ul class="nav nav-pills" id="sheetTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="scrap-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#scrap-content-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="scrap-content-pane"
+                        aria-selected="true"
+                        data-sheet="Scrap_Food_Name_List"
+                      >
+                        Scrap_Food
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="cache-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#cache-content-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="cache-content-pane"
+                        aria-selected="false"
+                        data-sheet="Cache_Food_Name_List"
+                      >
+                        Cache_Food
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="result-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#result-content-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="result-content-pane"
+                        aria-selected="false"
+                        data-sheet="Result_Food_Name_List"
+                      >
+                        Result_Food
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="sheetTabsContent">
+          <div
+            class="tab-pane fade show active"
+            id="scrap-content-pane"
+            role="tabpanel"
+            aria-labelledby="scrap-tab"
+          >
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h5 class="card-title text-success mb-0">
+                    Tabel Data: Scrap_Food_Name_List
+                  </h5>
+                  <button
+                    class="btn btn-primary btn-sm addNewButtonContext"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    data-sheet-context="Scrap_Food_Name_List"
+                  >
+                    <i class="bi bi-plus-circle-fill"></i> Tambah Data Scrap
+                  </button>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control table-search-input"
+                    id="searchInputScrap"
+                    placeholder="Cari data di tabel Scrap..."
+                    data-target-table="tableContainerScrap"
+                  />
+                </div>
+                <div id="loadingIndicatorScrap" class="text-center py-3">
+                  <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="table-responsive" id="tableContainerScrap"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="cache-content-pane"
+            role="tabpanel"
+            aria-labelledby="cache-tab"
+          >
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h5 class="card-title text-success mb-0">
+                    Tabel Data: Cache_Food_Name_List
+                  </h5>
+                  <button
+                    class="btn btn-primary btn-sm addNewButtonContext"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    data-sheet-context="Cache_Food_Name_List"
+                  >
+                    <i class="bi bi-plus-circle-fill"></i> Tambah Data Cache
+                  </button>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control table-search-input"
+                    id="searchInputCache"
+                    placeholder="Cari data di tabel Cache..."
+                    data-target-table="tableContainerCache"
+                  />
+                </div>
+                <div id="loadingIndicatorCache" class="text-center py-3">
+                  <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="table-responsive" id="tableContainerCache"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="result-content-pane"
+            role="tabpanel"
+            aria-labelledby="result-tab"
+          >
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h5 class="card-title text-success mb-0">
+                    Tabel Data: Result_Food_Name_List
+                  </h5>
+                  <button
+                    class="btn btn-primary btn-sm addNewButtonContext"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                    data-sheet-context="Result_Food_Name_List"
+                  >
+                    <i class="bi bi-plus-circle-fill"></i> Tambah Data Result
+                  </button>
+                </div>
+                <div class="mb-3">
+                  <label for="foodNutritionSearchInput" class="form-label"
+                    >Cari Detail Gizi Makanan (via API Server):</label
+                  >
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="foodNutritionSearchInput"
+                      placeholder="Masukkan nama makanan untuk info gizi..."
+                    />
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                      id="fetchFoodNutritionButton"
+                    >
+                      <i class="bi bi-search"></i> Cari Gizi
+                    </button>
+                  </div>
+                </div>
+                <div
+                  id="foodDetailResultArea"
+                  class="mt-3 mb-3 p-3 bg-light rounded"
+                  style="display: none"
+                >
+                  <h6>
+                    Detail Gizi Makanan: <span id="foodDetailName"></span>
+                  </h6>
+                  <pre
+                    id="foodDetailJson"
+                    class="bg-white p-2 rounded small"
+                  ></pre>
+                  <div
+                    id="foodDetailError"
+                    class="text-danger small"
+                    style="display: none"
+                  ></div>
+                </div>
+                <hr />
+                <div class="mb-3">
+                  <label for="searchInputResultTable" class="form-label"
+                    >Cari Data di Tabel Result (Lokal):</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control table-search-input"
+                    id="searchInputResultTable"
+                    placeholder="Filter data di tabel Result..."
+                    data-target-table="tableContainerResult"
+                  />
+                </div>
+                <div id="loadingIndicatorResult" class="text-center py-3">
+                  <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="table-responsive" id="tableContainerResult"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modelManagementArea" class="d-none">
+        <h3 class="mb-4 text-success">
+          Manajemen Model TensorFlow.js (via Server Hapi.js)
+        </h3>
+        <div class="alert alert-info" role="alert">
+          <i class="bi bi-info-circle-fill"></i> <b>Catatan:</b> Model dan
+          asetnya diunggah ke server Hapi.js. Server akan menangani penyimpanan
+          dan penyajian file model.
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Model Deteksi Makanan</h5>
+                <hr />
+                <div class="mb-3">
+                  <label for="detectionModelInput" class="form-label"
+                    >Pilih File Model (.zip):</label
+                  ><input
+                    class="form-control"
+                    type="file"
+                    id="detectionModelInput"
+                    accept=".zip"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="detectionLabelInput" class="form-label"
+                    >Pilih File Label Model (label.json, opsional):</label
+                  ><input
+                    class="form-control"
+                    type="file"
+                    id="detectionLabelInput"
+                    accept=".json"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-success w-100 mb-2"
+                  id="uploadDetectionModelButton"
+                >
+                  <i class="bi bi-upload"></i> Unggah Model & Label Deteksi
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-info w-100 mb-2"
+                  id="checkDetectionModelButton"
+                >
+                  <i class="bi bi-patch-check-fill"></i> Cek Info Model Deteksi
+                </button>
+                <div id="detectionModelStatus" class="mt-2 form-text">
+                  Status: Belum diperiksa.
+                </div>
+                <div id="detectionModelContentInfo" class="mt-2 form-text">
+                  Model Inti: -
+                </div>
+                <div id="detectionLabelInfo" class="mt-2 form-text">
+                  Label: -
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Model Rekomendasi Makanan</h5>
+                <hr />
+                <div class="mb-3">
+                  <label for="recommendationModelInput" class="form-label"
+                    >Pilih File Model (.zip):</label
+                  ><input
+                    class="form-control"
+                    type="file"
+                    id="recommendationModelInput"
+                    accept=".zip"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="recommendationLabelInput" class="form-label"
+                    >Pilih File Label Model (label.json, opsional):</label
+                  ><input
+                    class="form-control"
+                    type="file"
+                    id="recommendationLabelInput"
+                    accept=".json"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-success w-100 mb-3"
+                  id="uploadRecommendationModelButton"
+                >
+                  <i class="bi bi-upload"></i> Unggah Model & Label Rekomendasi
+                </button>
+                <hr />
+                <h6 class="text-muted">Komponen Tambahan Model Rekomendasi:</h6>
+                <div class="mb-3">
+                  <label for="recommendationScalerXInput" class="form-label"
+                    >Pilih File Scaler X (scaler_x.pkl):</label
+                  >
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="recommendationScalerXInput"
+                      accept=".pkl"
+                    />
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      type="button"
+                      id="uploadRecommendationScalerXButton"
+                    >
+                      Unggah
+                    </button>
+                  </div>
+                  <div
+                    id="recommendationScalerXInfo"
+                    class="mt-1 form-text small"
+                  >
+                    Scaler X: -
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="recommendationScalerYInput" class="form-label"
+                    >Pilih File Scaler Y (scaler_y.pkl):</label
+                  >
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="recommendationScalerYInput"
+                      accept=".pkl"
+                    />
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      type="button"
+                      id="uploadRecommendationScalerYButton"
+                    >
+                      Unggah
+                    </button>
+                  </div>
+                  <div
+                    id="recommendationScalerYInfo"
+                    class="mt-1 form-text small"
+                  >
+                    Scaler Y: -
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="recommendationMetadataInput" class="form-label"
+                    >Pilih File Metadata Model (metadata.json):</label
+                  >
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="recommendationMetadataInput"
+                      accept=".json"
+                    />
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      type="button"
+                      id="uploadRecommendationMetadataButton"
+                    >
+                      Unggah
+                    </button>
+                  </div>
+                  <div
+                    id="recommendationMetadataInfo"
+                    class="mt-1 form-text small"
+                  >
+                    Metadata: -
+                  </div>
+                </div>
+                <hr />
+                <button
+                  type="button"
+                  class="btn btn-info w-100 mt-2"
+                  id="checkRecommendationModelButton"
+                >
+                  <i class="bi bi-patch-check-fill"></i> Cek Info Model
+                  Rekomendasi Lengkap
+                </button>
+                <div id="recommendationModelStatus" class="mt-2 form-text">
+                  Status: Belum diperiksa.
+                </div>
+                <div id="recommendationModelContentInfo" class="mt-2 form-text">
+                  Model Inti: -
+                </div>
+                <div id="recommendationLabelInfo" class="mt-2 form-text">
+                  Label: -
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="trainingImageManagementArea" class="d-none">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="text-success mb-0">
+            Manajemen Gambar Latih (via Server Hapi.js)
+          </h3>
+          <div>
+            <span class="badge bg-primary p-2 me-1"
+              >Total: <span id="statTrainingTotal">0</span></span
+            >
+            <span class="badge bg-success p-2 me-1"
+              >Belum Dipakai: <span id="statTrainingUnused">0</span></span
+            >
+            <span class="badge bg-secondary p-2"
+              >Sudah Dipakai: <span id="statTrainingUsed">0</span></span
+            >
+          </div>
+        </div>
+        <hr class="mt-0" />
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Unggah Gambar Latih Baru</h5>
+                <hr />
+                <form id="uploadTrainingImageForm">
+                  <div class="mb-3">
+                    <label for="trainingImageFile" class="form-label"
+                      >Pilih Gambar Makanan:</label
+                    ><input
+                      class="form-control"
+                      type="file"
+                      id="trainingImageFile"
+                      accept="image/*"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="trainingFoodName" class="form-label"
+                      >Nama Makanan:</label
+                    ><input
+                      type="text"
+                      class="form-control"
+                      id="trainingFoodName"
+                      placeholder="cth: Nasi Goreng Spesial"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="trainingFoodDescription" class="form-label"
+                      >Deskripsi Singkat (opsional):</label
+                    ><textarea
+                      class="form-control"
+                      id="trainingFoodDescription"
+                      rows="2"
+                      placeholder="cth: Dengan telur mata sapi dan udang"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-cloud-arrow-up-fill"></i> Unggah Data Latih
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Statistik Upload Gambar per Hari</h5>
+                <hr />
+                <div style="height: 250px; position: relative">
+                  <canvas id="trainingImageUploadChart"></canvas>
+                </div>
+                <p
+                  id="trainingImageChartPlaceholder"
+                  class="text-muted text-center mt-3 d-none"
+                >
+                  Data tidak cukup untuk menampilkan grafik.
+                </p>
+              </div>
+            </div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Arsip Dataset ZIP</h5>
+                <hr />
+                <button
+                  class="btn btn-info w-100 mb-2"
+                  id="downloadAllUnusedButton"
+                >
+                  <i class="bi bi-archive-fill"></i> Buat & Unduh ZIP Dataset
+                  Belum Dipakai
+                </button>
+                <div
+                  id="datasetZipList"
+                  class="list-group mt-2"
+                  style="max-height: 200px; overflow-y: auto"
+                >
+                  <p
+                    id="datasetZipListPlaceholder"
+                    class="text-muted list-group-item"
+                  >
+                    Memuat daftar arsip ZIP...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5>Galeri Gambar Latih (dari Server)</h5>
+              <div>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  id="deleteAllUsedButton"
+                >
+                  <i class="bi bi-trash3-fill"></i> Hapus Semua Sudah Dipakai
+                </button>
+              </div>
+            </div>
+            <div
+              id="trainingImageGallery"
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+            >
+              <p id="trainingImageGalleryPlaceholder" class="text-muted">
+                Memuat data gambar latih atau belum ada gambar yang diunggah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="editModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="editModalLabel">Tambah/Edit Data</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="editForm" class="row g-3"></form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn btn-success" id="saveButton">
+              Simpan Perubahan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="settingsModal"
+      tabindex="-1"
+      aria-labelledby="settingsModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="settingsModalLabel">
+              <i class="bi bi-sliders"></i> Pengaturan Server & Google
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>
+              <i class="bi bi-hdd-network"></i> Konfigurasi Alamat Server
+              Hapi.js
+            </h6>
+            <p class="form-text">
+              Alamat utama server backend Hapi.js yang digunakan oleh aplikasi
+              ini.
+            </p>
+            <div class="mb-3">
+              <label for="hapiServerUrlSettingsInput" class="form-label"
+                >URL Server Hapi.js:</label
+              >
+              <input
+                type="url"
+                class="form-control"
+                id="hapiServerUrlSettingsInput"
+                placeholder="cth: http://localhost:3000"
+              />
+            </div>
+            <hr />
+            <h6>
+              <i class="bi bi-google"></i> Konfigurasi Google Apps Script (GAS)
+            </h6>
+            <p class="form-text">
+              Server Hapi.js akan menggunakan URL GAS ini untuk
+              mengambil/mengelola data spreadsheet Anda.
+            </p>
+            <div class="mb-3">
+              <label for="gasUrlInput" class="form-label"
+                >URL Google Apps Script:</label
+              >
+              <input
+                type="url"
+                class="form-control"
+                id="gasUrlInput"
+                placeholder="Masukkan URL Web App GAS"
+              />
+              <div class="form-text">
+                Pastikan GAS di-deploy dengan benar (Eksekusi sebagai Anda,
+                Akses: Siapa saja).
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="masterSpreadsheetUrlInput" class="form-label"
+                >URL Google Spreadsheet Induk (untuk referensi):</label
+              >
+              <input
+                type="url"
+                class="form-control"
+                id="masterSpreadsheetUrlInput"
+                placeholder="URL Spreadsheet master (opsional)"
+              />
+            </div>
+            <hr />
+            <h6>
+              <i class="bi bi-key-fill"></i> Autentikasi Google (Service Account
+              untuk GAS)
+            </h6>
+            <p class="form-text">
+              Unggah file kredensial Service Account (.json). Kredensial ini
+              akan digunakan oleh server Hapi.js untuk memanggil GAS.
+            </p>
+            <div class="mb-3">
+              <label for="credentialsInput" class="form-label"
+                >Unggah File Kredensial (.json):</label
+              >
+              <input
+                type="file"
+                class="form-control"
+                id="credentialsInput"
+                accept=".json"
+              />
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                id="uploadCredentialsButton"
+              >
+                <i class="bi bi-upload"></i> Unggah Kredensial
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger btn-sm"
+                id="deleteCredentialsButton"
+              >
+                <i class="bi bi-trash3-fill"></i> Hapus Kredensial di Server
+              </button>
+            </div>
+            <div id="credentialsUploadStatus" class="form-text mb-1"></div>
+            <div id="credentialsFileStatus" class="form-text fw-bold">
+              Status Kredensial Server: Memeriksa...
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="saveAppSettingsButton"
+            >
+              <i class="bi bi-save-fill"></i> Simpan Pengaturan Server
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="hapiConfigModal"
+      tabindex="-1"
+      aria-labelledby="hapiConfigModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hapiConfigModalLabel">
+              <i class="bi bi-hdd-network-fill"></i> Konfigurasi Server Hapi.js
+            </h5>
+          </div>
+          <div class="modal-body">
+            <p>
+              Tidak dapat terhubung ke server Hapi.js. Silakan masukkan alamat
+              server yang benar atau periksa koneksi Anda.
+            </p>
+            <div class="mb-3">
+              <label for="hapiServerUrlInput" class="form-label"
+                >Alamat Server Hapi.js:</label
+              >
+              <input
+                type="url"
+                class="form-control"
+                id="hapiServerUrlInput"
+                placeholder="cth: http://localhost:3000"
+                required
+              />
+              <div class="form-text">
+                Masukkan URL lengkap server Hapi.js Anda.
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="saveHapiServerUrlButton"
+            >
+              <i class="bi bi-plug-fill"></i> Simpan dan Coba Lagi
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  color: #198754 !important; /* Warna hijau utama */
+}
+
+.card {
+  border-radius: 15px;
+}
+.card.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.nav-pills .nav-link {
+  color: #6c757d; /* Warna abu-abu untuk tab tidak aktif */
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #198754; /* Warna hijau utama untuk tab aktif */
+}
+
+/* Styling untuk nav-link utama di navbar */
+.navbar-nav .nav-link.active {
+  color: #198754 !important;
+  font-weight: 600;
+  border-bottom: 3px solid #198754;
+}
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #105c37 !important;
+}
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+}
+.btn-success:hover {
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.btn-info {
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+  color: #000;
+}
+.btn-info:hover {
+  background-color: #0baccc;
+  border-color: #0a9cb9;
+  color: #000;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn-danger:hover {
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+.btn-warning:hover {
+  background-color: #ffca2c;
+  border-color: #ffc720;
+  color: #000;
+}
+
+.modal-header.bg-success {
+  background-color: #198754 !important;
+}
+.modal-header.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.table th {
+  background-color: #e9f5ee; /* Latar belakang header tabel lebih lembut */
+  color: #198754; /* Warna teks header tabel */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f0f0; /* Warna hover baris tabel */
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+#loadingIndicatorScrap,
+#loadingIndicatorCache,
+#loadingIndicatorResult {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 8px 25px;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875em;
+  border-radius: 15px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.table-responsive {
+  max-height: 450px;
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+}
+
+#detectionModelStatus,
+#recommendationModelStatus,
+#detectionModelContentInfo, /* Mengganti #detectionModelInfo */
+#recommendationModelContentInfo, /* Mengganti #recommendationModelInfo */
+#detectionLabelInfo,
+#recommendationLabelInfo,
+#recommendationScalerXInfo,
+#recommendationScalerYInfo,
+#recommendationMetadataInfo {
+  font-size: 0.875em;
+  word-break: break-word;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+}
+
+#detectionModelContentInfo small,
+#recommendationModelContentInfo small,
+#detectionLabelInfo small,
+#recommendationLabelInfo small,
+#recommendationScalerXInfo small,
+#recommendationScalerYInfo small,
+#recommendationMetadataInfo small {
+  display: block;
+  margin-top: 0.25rem;
+  color: #6c757d;
+}
+
+/* SweetAlert2 Button Styling */
+.swal2-confirm.swal2-styled {
+  background-color: #198754 !important;
+  border-radius: 20px !important;
+  padding: 10px 25px !important;
+}
+.swal2-cancel.swal2-styled,
+.swal2-deny.swal2-styled {
+  border-radius: 20px !important;
+  padding: 10px 25px !important;
+}
+.swal2-cancel.swal2-styled {
+  background-color: #6c757d !important;
+}
+.swal2-deny.swal2-styled {
+  background-color: #dc3545 !important;
+}
+
+/* Settings Modal Specifics */
+#settingsModal .modal-dialog.modal-lg {
+  max-width: 800px;
+}
+
+/* Training Image Gallery Styling */
+#trainingImageGallery .card-img-top {
+  width: 100%;
+  height: 200px; /* Tinggi gambar konsisten */
+  object-fit: cover; /* Gambar akan di-crop agar pas */
+  border-bottom: 1px solid #eee;
+  border-top-left-radius: 15px; /* Sesuaikan dengan border-radius card */
+  border-top-right-radius: 15px;
+}
+#trainingImageGallery .training-image-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#trainingImageGallery .training-image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+#trainingImageGallery .training-image-card.used {
+  border-left: 5px solid #6c757d; /* Warna abu-abu untuk yang sudah dipakai */
+  opacity: 0.8;
+}
+#trainingImageGallery .training-image-card.unused {
+  border-left: 5px solid #198754; /* Warna hijau untuk yang belum dipakai */
+}
+#trainingImageGallery .card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px; /* Tambahkan tinggi minimum agar ukuran card konsisten */
+}
+#trainingImageGallery .card-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+#trainingImageGallery .card-text {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+  flex-grow: 1; /* Membuat deskripsi mengisi ruang yang tersedia */
+}
+#trainingImageGallery .btn-group .btn {
+  margin-right: 5px;
+}
+#trainingImageGallery .card-footer {
+  background-color: #f8f9fa;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8em;
+  border-bottom-left-radius: 15px; /* Sesuaikan dengan border-radius card */
+  border-bottom-right-radius: 15px;
+}
+
+/* Badge Styling */
+.badge {
+  padding: 0.5em 0.75em;
+  font-size: 0.9em;
+}
+
+/* Regional Nutrient Stats Table */
+#regionalNutrientStatsArea .table-responsive {
+  max-height: 300px;
+}
+#regionalNutrientStatsArea th {
+  font-size: 0.9em;
+}
+#regionalNutrientStatsArea td {
+  font-size: 0.85em;
+}
+
+/* Credentials Status Text */
+#credentialsUploadStatus,
+#credentialsFileStatus {
+  font-size: 0.875em;
+  margin-top: 0.5rem;
+}
+
+/* Chart container */
+#trainingImageUploadChart {
+  max-height: 250px; /* Batasi tinggi chart */
+}

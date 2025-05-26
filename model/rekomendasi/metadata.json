@@ -1,0 +1,32 @@
+{
+    "nutritional_columns": [
+        "kalori (kkal)",
+        "energi (kj)",
+        "lemak (g)",
+        "lemak jenuh (g)",
+        "lemak tak jenuh ganda (g)",
+        "lemak tak jenuh tunggal (g)",
+        "kolesterol (mg)",
+        "protein (g)",
+        "karbohidrat (g)",
+        "serat (g)",
+        "gula (g)",
+        "sodium (mg)",
+        "kalium (mg)"
+    ],
+    "daily_requirements": {
+        "kalori (kkal)": 2000,
+        "energi (kj)": 8368,
+        "protein (g)": 56,
+        "karbohidrat (g)": 275,
+        "lemak (g)": 78,
+        "lemak jenuh (g)": 22,
+        "lemak tak jenuh ganda (g)": 18,
+        "lemak tak jenuh tunggal (g)": 25,
+        "kolesterol (mg)": 300,
+        "serat (g)": 28,
+        "gula (g)": 50,
+        "sodium (mg)": 2300,
+        "kalium (mg)": 3500
+    }
+}
