@@ -337,8 +337,8 @@ const init = async () => {
 
 	const server = Hapi.server({
 		// MODIFIED: Menggunakan port dan host dari .env atau fallback ke nilai lama
-		port: process.env.PORT || 3050,
-		host: process.env.HOST || 'localhost',
+		port: process.env.PORT || 3000,
+		host: process.env.HOST || '0.0.0.0',
 		routes: {
 			cors: { origin: ['*'], credentials: true },
 			payload: {
