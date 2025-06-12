@@ -1,0 +1,1780 @@
+[
+    {
+        "nama_makanan": "Arsik Ikan Mas",
+        "label": "Region: Sumatra Utara; Asli: Batak",
+        "region": "Sumatra Utara",
+        "availability": "Specific",
+        "origin": "Batak"
+    },
+    {
+        "nama_makanan": "Asam Pedas Baung",
+        "label": "Region: Riau, Jambi",
+        "region": "Riau",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Asinan Betawi",
+        "label": "Region: Jakarta; Asli: Betawi",
+        "region": "Jakarta",
+        "availability": "Specific",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Asinan Bogor",
+        "label": "Region: Jawa Barat; Asli: Bogor",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Bogor"
+    },
+    {
+        "nama_makanan": "Ayam Bakar",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ayam Betutu",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ayam Cincane",
+        "label": "Region: Kalimantan Timur",
+        "region": "Kalimantan Timur",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ayam Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ayam Goreng Kalasan",
+        "label": "General; Umum di: Yogyakarta, Jawa Tengah; Asli: Kalasan",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kalasan"
+    },
+    {
+        "nama_makanan": "Ayam Goreng Kremes",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ayam Goreng Lengkuas",
+        "label": "General; Umum di: Sunda, Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ayam Lodho",
+        "label": "Region: Jawa Timur; Asli: Tulungagung",
+        "region": "Jawa Timur",
+        "availability": "Specific",
+        "origin": "Tulungagung"
+    },
+    {
+        "nama_makanan": "Ayam Pop",
+        "label": "General; Umum di: Sumatra Barat; Asli: Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Padang"
+    },
+    {
+        "nama_makanan": "Ayam Rica-Rica",
+        "label": "General; Umum di: Sulawesi Utara; Asli: Manado",
+        "region": "General",
+        "availability": "General",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Ayam Taliwang",
+        "label": "General; Umum di: Lombok, Bali; Asli: Lombok",
+        "region": "General",
+        "availability": "General",
+        "origin": "Lombok"
+    },
+    {
+        "nama_makanan": "Ayam Tangkap",
+        "label": "Region: Aceh",
+        "region": "Aceh",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Babi Guling",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bakmi Jawa",
+        "label": "General; Umum di: Jawa Tengah, Yogyakarta",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bakpia Pathok",
+        "label": "General; Umum di: Yogyakarta; Asli: Yogyakarta",
+        "region": "General",
+        "availability": "General",
+        "origin": "Yogyakarta"
+    },
+    {
+        "nama_makanan": "Bakso Sapi",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bakwan (Bala-Bala)",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Batagor",
+        "label": "General; Umum di: Jawa Barat, kota besar; Asli: Bandung",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bandung"
+    },
+    {
+        "nama_makanan": "Bebek Betutu",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bihun Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bika Ambon",
+        "label": "General; Umum di: Sumatra Utara, kota besar; Asli: Medan",
+        "region": "General",
+        "availability": "General",
+        "origin": "Medan"
+    },
+    {
+        "nama_makanan": "Bika Bogor",
+        "label": "Region: Jawa Barat; Asli: Bogor",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Bogor"
+    },
+    {
+        "nama_makanan": "Bingka Kentang",
+        "label": "Region: Kalimantan Selatan; Asli: Banjar",
+        "region": "Kalimantan Selatan",
+        "availability": "Specific",
+        "origin": "Banjar"
+    },
+    {
+        "nama_makanan": "Bothok",
+        "label": "General; Umum di: Jawa Tengah, Jawa Timur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bubur Ayam",
+        "label": "General; Umum di: Jawa Barat, Jakarta",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bubur Candil (Biji Salak)",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bubur Ketan Hitam",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bubur Manado (Tinutuan)",
+        "label": "Region: Sulawesi Utara; Asli: Manado",
+        "region": "Sulawesi Utara",
+        "availability": "Specific",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Bubur Pedas Sambas",
+        "label": "Region: Kalimantan Barat",
+        "region": "Kalimantan Barat",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bubur Sumsum",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Cap Cai Goreng/Kuah",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Cenil",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Colenak",
+        "label": "Region: Jawa Barat; Asli: Bandung",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Bandung"
+    },
+    {
+        "nama_makanan": "Combro",
+        "label": "Region: Jawa Barat; Asli: Sunda",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Sunda"
+    },
+    {
+        "nama_makanan": "Coto Makassar",
+        "label": "General; Umum di: Sulawesi Selatan, kota besar; Asli: Makassar",
+        "region": "General",
+        "availability": "General",
+        "origin": "Makassar"
+    },
+    {
+        "nama_makanan": "Dadar Gulung",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Dendeng Balado",
+        "label": "General; Umum di: Sumatra Barat; Asli: Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Padang"
+    },
+    {
+        "nama_makanan": "Dendeng Batokok",
+        "label": "Region: Sumatra Barat; Asli: Padang",
+        "region": "Sumatra Barat",
+        "availability": "Specific",
+        "origin": "Padang"
+    },
+    {
+        "nama_makanan": "Dodol Garut",
+        "label": "Region: Jawa Barat; Asli: Garut",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Garut"
+    },
+    {
+        "nama_makanan": "Empal Gentong",
+        "label": "Region: Jawa Barat; Asli: Cirebon",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Cirebon"
+    },
+    {
+        "nama_makanan": "Emping Melinjo",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Es Cendol (Dawet)",
+        "label": "General; Umum di: Jawa, Sunda",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Es Doger",
+        "label": "General; Umum di: Jawa Barat",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Es Palu Butung",
+        "label": "Region: Sulawesi Selatan; Asli: Makassar",
+        "region": "Sulawesi Selatan",
+        "availability": "Specific",
+        "origin": "Makassar"
+    },
+    {
+        "nama_makanan": "Es Pisang Ijo",
+        "label": "Region: Sulawesi Selatan; Asli: Makassar",
+        "region": "Sulawesi Selatan",
+        "availability": "Specific",
+        "origin": "Makassar"
+    },
+    {
+        "nama_makanan": "Es Teler",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Fu Yung Hai",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gado-gado",
+        "label": "General; Umum di: Jakarta, Jawa Barat, Jawa Timur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gangan Asam Patin",
+        "label": "Region: Kalimantan Selatan",
+        "region": "Kalimantan Selatan",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Garang Asem",
+        "label": "General; Umum di: Jawa Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Getuk Lindri",
+        "label": "General; Umum di: Jawa Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gudeg",
+        "label": "Region: Yogyakarta",
+        "region": "Yogyakarta",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gulai Ayam",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gulai Ikan Patin",
+        "label": "General; Umum di: Riau, Jambi, Palembang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gulai Itiak Lado Mudo",
+        "label": "Region: Sumatra Barat",
+        "region": "Sumatra Barat",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gulai Kepala Ikan Kakap",
+        "label": "General; Umum di: Padang, Melayu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ikan Asar",
+        "label": "Region: Maluku, Papua",
+        "region": "Maluku",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ikan Asin Goreng/Balado",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ikan Bakar",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ikan Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ikan Kuah Kuning",
+        "label": "General; Umum di: Maluku, Papua",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Jagung Bose",
+        "label": "Region: NTT/Flores",
+        "region": "NTT/Flores",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Jukut Ares",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kapurung",
+        "label": "Region: Sulawesi Selatan; Asli: Luwu",
+        "region": "Sulawesi Selatan",
+        "availability": "Specific",
+        "origin": "Luwu"
+    },
+    {
+        "nama_makanan": "Karedok",
+        "label": "Region: Jawa Barat; Asli: Sunda",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Sunda"
+    },
+    {
+        "nama_makanan": "Kasbi Rebus",
+        "label": "Region: Maluku, Papua",
+        "region": "Maluku",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kerak Telor",
+        "label": "Region: Jakarta; Asli: Betawi",
+        "region": "Jakarta",
+        "availability": "Specific",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Keripik Sanjai",
+        "label": "Region: Sumatra Barat; Asli: Bukittinggi",
+        "region": "Sumatra Barat",
+        "availability": "Specific",
+        "origin": "Bukittinggi"
+    },
+    {
+        "nama_makanan": "Kerupuk Bawang",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kerupuk Ikan",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kerupuk Kulit (Rambak)",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kerupuk Palembang",
+        "label": "General; Asli: Palembang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Palembang"
+    },
+    {
+        "nama_makanan": "Kerupuk Udang",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ketoprak",
+        "label": "General; Umum di: Jakarta, Cirebon",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ketupat Kandangan",
+        "label": "Region: Kalimantan Selatan",
+        "region": "Kalimantan Selatan",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Klapertart",
+        "label": "General; Umum di: Sulawesi Utara; Asli: Manado",
+        "region": "General",
+        "availability": "General",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Klepon",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kohu-kohu",
+        "label": "Region: Maluku",
+        "region": "Maluku",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kolak Pisang Ubi",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kue Cubit",
+        "label": "General; Umum di: Jakarta, Jawa Barat",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kue Lapis Legit",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kwetiau Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Laksa Bogor",
+        "label": "Region: Jawa Barat; Asli: Bogor",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Bogor"
+    },
+    {
+        "nama_makanan": "Laksan",
+        "label": "Region: Sumatra Selatan; Asli: Palembang",
+        "region": "Sumatra Selatan",
+        "availability": "Specific",
+        "origin": "Palembang"
+    },
+    {
+        "nama_makanan": "Lalampa",
+        "label": "Region: Sulawesi Utara; Asli: Manado",
+        "region": "Sulawesi Utara",
+        "availability": "Specific",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Lalapan",
+        "label": "General; Umum di: Jawa, Sunda",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lawar",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lempok Durian",
+        "label": "General; Umum di: Sumatra (Bengkulu, Palembang, Jambi, Riau)",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lontong Balap",
+        "label": "Region: Jawa Timur; Asli: Surabaya",
+        "region": "Jawa Timur",
+        "availability": "Specific",
+        "origin": "Surabaya"
+    },
+    {
+        "nama_makanan": "Lontong Kupang",
+        "label": "Region: Jawa Timur",
+        "region": "Jawa Timur",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lontong Sayur",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lotek",
+        "label": "General; Umum di: Jawa Barat, Jawa Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lumpia Semarang",
+        "label": "General; Umum di: Jawa Tengah, kota besar; Asli: Semarang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Semarang"
+    },
+    {
+        "nama_makanan": "Lupis",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Mangut Lele",
+        "label": "General; Umum di: Jawa Tengah, Yogyakarta",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Martabak Manis (Terang Bulan)",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Martabak Telur",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Mie Aceh",
+        "label": "General; Umum di: Aceh, Medan, Jakarta; Asli: Aceh",
+        "region": "General",
+        "availability": "General",
+        "origin": "Aceh"
+    },
+    {
+        "nama_makanan": "Mie Celor",
+        "label": "Region: Sumatra Selatan; Asli: Palembang",
+        "region": "Sumatra Selatan",
+        "availability": "Specific",
+        "origin": "Palembang"
+    },
+    {
+        "nama_makanan": "Mie Gomak",
+        "label": "Region: Sumatra Utara; Asli: Batak",
+        "region": "Sumatra Utara",
+        "availability": "Specific",
+        "origin": "Batak"
+    },
+    {
+        "nama_makanan": "Mie Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Mie Koclok Cirebon",
+        "label": "Region: Jawa Barat; Asli: Cirebon",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Cirebon"
+    },
+    {
+        "nama_makanan": "Mie Ongklok Wonosobo",
+        "label": "Region: Jawa Tengah; Asli: Wonosobo",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Wonosobo"
+    },
+    {
+        "nama_makanan": "Milu Siram (Binte Biluhuta)",
+        "label": "Region: Gorontalo",
+        "region": "Gorontalo",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Misro",
+        "label": "Region: Jawa Barat; Asli: Sunda",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Sunda"
+    },
+    {
+        "nama_makanan": "Nagasari",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Bekepor",
+        "label": "Region: Kalimantan Timur",
+        "region": "Kalimantan Timur",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Bogana",
+        "label": "Region: Jawa Barat; Asli: Cirebon",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Cirebon"
+    },
+    {
+        "nama_makanan": "Nasi Campur Bali",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Gandul",
+        "label": "Region: Jawa Tengah; Asli: Pati",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Pati"
+    },
+    {
+        "nama_makanan": "Nasi Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Kapau",
+        "label": "Region: Sumatra Barat; Asli: Kapau",
+        "region": "Sumatra Barat",
+        "availability": "Specific",
+        "origin": "Kapau"
+    },
+    {
+        "nama_makanan": "Nasi Kucing",
+        "label": "General; Umum di: Yogyakarta, Jawa Tengah (Angkringan)",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Kuning",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Lapola",
+        "label": "Region: Maluku",
+        "region": "Maluku",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Liwet Solo",
+        "label": "Region: Jawa Tengah; Asli: Solo",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Solo"
+    },
+    {
+        "nama_makanan": "Nasi Megono",
+        "label": "Region: Jawa Tengah; Asli: Pekalongan",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Pekalongan"
+    },
+    {
+        "nama_makanan": "Nasi Pecel",
+        "label": "General; Umum di: Jawa Timur, Jawa Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Putih",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Nasi Timbel",
+        "label": "Region: Jawa Barat; Asli: Sunda",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Sunda"
+    },
+    {
+        "nama_makanan": "Nasi Uduk",
+        "label": "General; Umum di: Jakarta; Asli: Betawi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Nasi Ulam",
+        "label": "Region: Jakarta; Asli: Betawi",
+        "region": "Jakarta",
+        "availability": "Specific",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Onde-onde",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ongol-ongol",
+        "label": "Region: Jawa Barat",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Opor Ayam",
+        "label": "General; Umum di: Jawa Tengah, Jawa Barat",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Otak-otak",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Pallu Basa",
+        "label": "Region: Sulawesi Selatan; Asli: Makassar",
+        "region": "Sulawesi Selatan",
+        "availability": "Specific",
+        "origin": "Makassar"
+    },
+    {
+        "nama_makanan": "Pallu Mara",
+        "label": "Region: Sulawesi Tengah",
+        "region": "Sulawesi Tengah",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Paniki (Kelelawar)",
+        "label": "Region: Sulawesi Utara; Asli: Manado",
+        "region": "Sulawesi Utara",
+        "availability": "Specific",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Papeda",
+        "label": "Region: Maluku, Papua",
+        "region": "Maluku",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Pecel Lele",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Pecel Madiun",
+        "label": "General; Umum di: Jawa Timur, Jawa Tengah; Asli: Madiun",
+        "region": "General",
+        "availability": "General",
+        "origin": "Madiun"
+    },
+    {
+        "nama_makanan": "Pempek Palembang",
+        "label": "General; Umum di: Sumatra Selatan, Jakarta, kota besar; Asli: Palembang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Palembang"
+    },
+    {
+        "nama_makanan": "Pendap",
+        "label": "Region: Bengkulu",
+        "region": "Bengkulu",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Pengkang",
+        "label": "Region: Kalimantan Barat",
+        "region": "Kalimantan Barat",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Pepes Ikan/Tahu/Jamur",
+        "label": "General; Umum di: Sunda, Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Perkedel Kentang",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Pindang Patin",
+        "label": "Region: Sumatra Selatan; Asli: Palembang",
+        "region": "Sumatra Selatan",
+        "availability": "Specific",
+        "origin": "Palembang"
+    },
+    {
+        "nama_makanan": "Pisang Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Plecing Kangkung",
+        "label": "General; Umum di: Lombok, Bali; Asli: Lombok",
+        "region": "General",
+        "availability": "General",
+        "origin": "Lombok"
+    },
+    {
+        "nama_makanan": "Putu Mayang",
+        "label": "General; Umum di: Betawi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Rawon",
+        "label": "General; Umum di: Jawa Timur; Asli: Jawa Timur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Jawa Timur"
+    },
+    {
+        "nama_makanan": "Rempeyek (Peyek)",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Rendang Sapi",
+        "label": "General; Umum di: Sumatra Barat, Riau, Jakarta; Asli: Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Padang"
+    },
+    {
+        "nama_makanan": "Roti Gambang",
+        "label": "Region: Jakarta; Asli: Betawi",
+        "region": "Jakarta",
+        "availability": "Specific",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Rujak Buah",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Rujak Cingur",
+        "label": "Region: Jawa Timur; Asli: Surabaya",
+        "region": "Jawa Timur",
+        "availability": "Specific",
+        "origin": "Surabaya"
+    },
+    {
+        "nama_makanan": "Sagu Lempeng",
+        "label": "Region: Maluku, Papua",
+        "region": "Maluku",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Saksang",
+        "label": "Region: Sumatra Utara; Asli: Batak",
+        "region": "Sumatra Utara",
+        "availability": "Specific",
+        "origin": "Batak"
+    },
+    {
+        "nama_makanan": "Sambal Bawang",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sambal Dabu-dabu",
+        "label": "General; Umum di: Sulawesi Utara; Asli: Manado",
+        "region": "General",
+        "availability": "General",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Sambal Goreng Ati",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sambal Ijo",
+        "label": "General; Umum di: Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sambal Kacang",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sambal Matah",
+        "label": "General; Umum di: Bali; Asli: Bali",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bali"
+    },
+    {
+        "nama_makanan": "Sambal Roa",
+        "label": "Region: Sulawesi Utara; Asli: Manado",
+        "region": "Sulawesi Utara",
+        "availability": "Specific",
+        "origin": "Manado"
+    },
+    {
+        "nama_makanan": "Sambal Terasi",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sate Ayam Madura",
+        "label": "General; Asli: Madura",
+        "region": "General",
+        "availability": "General",
+        "origin": "Madura"
+    },
+    {
+        "nama_makanan": "Sate Ayam Ponorogo",
+        "label": "General; Umum di: Jawa Timur; Asli: Ponorogo",
+        "region": "General",
+        "availability": "General",
+        "origin": "Ponorogo"
+    },
+    {
+        "nama_makanan": "Sate Kambing",
+        "label": "General; Umum di: Jawa, Madura",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sate Kambing Tegal/Solo",
+        "label": "General; Umum di: Jawa Tengah; Asli: Tegal/Solo",
+        "region": "General",
+        "availability": "General",
+        "origin": "Tegal/Solo"
+    },
+    {
+        "nama_makanan": "Sate Kerang",
+        "label": "General; Umum di: Surabaya, Medan",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sate Klathak",
+        "label": "Region: Yogyakarta",
+        "region": "Yogyakarta",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sate Lilit",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sate Maranggi",
+        "label": "Region: Jawa Barat; Asli: Purwakarta",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Purwakarta"
+    },
+    {
+        "nama_makanan": "Sate Padang",
+        "label": "General; Umum di: Sumatra Barat, kota besar; Asli: Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Padang"
+    },
+    {
+        "nama_makanan": "Sate Rembiga",
+        "label": "Region: Lombok",
+        "region": "Lombok",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sayur Asem",
+        "label": "General; Umum di: Jakarta, Sunda, Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sayur Bening Bayam",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sayur Lodeh",
+        "label": "General; Umum di: Jawa Tengah, Jawa Timur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sayur Oblok-oblok",
+        "label": "General; Umum di: Jawa Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Seblak",
+        "label": "General; Umum di: Jawa Barat; Asli: Bandung",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bandung"
+    },
+    {
+        "nama_makanan": "Se'i Sapi",
+        "label": "General; Umum di: NTT; Asli: Kupang/Rote",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kupang/Rote"
+    },
+    {
+        "nama_makanan": "Semur Daging",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Semur Jengkol",
+        "label": "General; Umum di: Betawi, Sunda",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Serabi (Surabi)",
+        "label": "General; Umum di: Jawa Barat, Jawa Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Seruit",
+        "label": "Region: Lampung",
+        "region": "Lampung",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Siomay Bandung",
+        "label": "General; Umum di: Jawa Barat, kota besar; Asli: Bandung",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bandung"
+    },
+    {
+        "nama_makanan": "Sop Buntut",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sop Iga Sapi",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sop Konro",
+        "label": "General; Umum di: Sulawesi Selatan; Asli: Makassar",
+        "region": "General",
+        "availability": "General",
+        "origin": "Makassar"
+    },
+    {
+        "nama_makanan": "Sop Saudara",
+        "label": "Region: Sulawesi Selatan; Asli: Pangkep",
+        "region": "Sulawesi Selatan",
+        "availability": "Specific",
+        "origin": "Pangkep"
+    },
+    {
+        "nama_makanan": "Soto Ayam Ambengan",
+        "label": "General; Umum di: Jawa Timur; Asli: Surabaya",
+        "region": "General",
+        "availability": "General",
+        "origin": "Surabaya"
+    },
+    {
+        "nama_makanan": "Soto Banjar",
+        "label": "General; Umum di: Kalimantan Selatan; Asli: Banjar",
+        "region": "General",
+        "availability": "General",
+        "origin": "Banjar"
+    },
+    {
+        "nama_makanan": "Soto Betawi",
+        "label": "General; Umum di: Jakarta; Asli: Betawi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Soto Kudus",
+        "label": "General; Umum di: Jawa Tengah; Asli: Kudus",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kudus"
+    },
+    {
+        "nama_makanan": "Soto Lamongan",
+        "label": "General; Umum di: Jawa Timur, kota besar; Asli: Lamongan",
+        "region": "General",
+        "availability": "General",
+        "origin": "Lamongan"
+    },
+    {
+        "nama_makanan": "Soto Madura",
+        "label": "General; Umum di: Madura, Jawa Timur; Asli: Madura",
+        "region": "General",
+        "availability": "General",
+        "origin": "Madura"
+    },
+    {
+        "nama_makanan": "Soto Medan",
+        "label": "General; Umum di: Sumatra Utara; Asli: Medan",
+        "region": "General",
+        "availability": "General",
+        "origin": "Medan"
+    },
+    {
+        "nama_makanan": "Soto Mie Bogor",
+        "label": "Region: Jawa Barat; Asli: Bogor",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Bogor"
+    },
+    {
+        "nama_makanan": "Soto Padang",
+        "label": "General; Umum di: Sumatra Barat; Asli: Padang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Padang"
+    },
+    {
+        "nama_makanan": "Soto Semarang",
+        "label": "General; Umum di: Jawa Tengah; Asli: Semarang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Semarang"
+    },
+    {
+        "nama_makanan": "Soto Sokaraja",
+        "label": "Region: Jawa Tengah; Asli: Banyumas",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Banyumas"
+    },
+    {
+        "nama_makanan": "Swikee (Kodok)",
+        "label": "General; Umum di: Jawa Tengah; Asli: Purwodadi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Purwodadi"
+    },
+    {
+        "nama_makanan": "Tahu Aci",
+        "label": "Region: Jawa Tengah; Asli: Tegal",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Tegal"
+    },
+    {
+        "nama_makanan": "Tahu Bulat",
+        "label": "General; Umum di: Jawa Barat",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tahu Gejrot",
+        "label": "Region: Jawa Barat; Asli: Cirebon",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Cirebon"
+    },
+    {
+        "nama_makanan": "Tahu Gimbal",
+        "label": "Region: Jawa Tengah; Asli: Semarang",
+        "region": "Jawa Tengah",
+        "availability": "Specific",
+        "origin": "Semarang"
+    },
+    {
+        "nama_makanan": "Tahu Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tahu Sumedang",
+        "label": "Region: Jawa Barat; Asli: Sumedang",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Sumedang"
+    },
+    {
+        "nama_makanan": "Tahu Tek",
+        "label": "Region: Jawa Timur; Asli: Surabaya",
+        "region": "Jawa Timur",
+        "availability": "Specific",
+        "origin": "Surabaya"
+    },
+    {
+        "nama_makanan": "Tekwan",
+        "label": "General; Umum di: Sumatra Selatan; Asli: Palembang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Palembang"
+    },
+    {
+        "nama_makanan": "Telur Balado",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tempe Bacem",
+        "label": "General; Umum di: Jawa Tengah, Yogyakarta",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tempe Goreng",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tempe Mendoan",
+        "label": "General; Umum di: Jawa Tengah; Asli: Banyumas",
+        "region": "General",
+        "availability": "General",
+        "origin": "Banyumas"
+    },
+    {
+        "nama_makanan": "Tempoyak Ikan Patin",
+        "label": "Region: Jambi, Palembang, Lampung",
+        "region": "Jambi",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tipat Cantok",
+        "label": "Region: Bali",
+        "region": "Bali",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tongseng Kambing/Sapi",
+        "label": "General; Umum di: Jawa Tengah, Yogyakarta",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tumis Kangkung",
+        "label": "General",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Udang Selingkuh",
+        "label": "Region: Papua; Asli: Wamena",
+        "region": "Papua",
+        "availability": "Specific",
+        "origin": "Wamena"
+    },
+    {
+        "nama_makanan": "Urap Sayur",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Wajik",
+        "label": "General; Umum di: Jawa",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kari Tuna",
+        "label": "General; Umum di: Sumatera Barat",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Papeda",
+        "label": "Asli dari: Papua dan Maluku",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Kapurung",
+        "label": "Asli dari: Sulawesi Selatan; Umum di: Makassar",
+        "region": "General",
+        "availability": "Makassar",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gulai Pisang",
+        "label": "General; Umum di: Bengkulu; Asli: Bengkulu Tengah",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bengkulu Tengah"
+    },
+    {
+        "nama_makanan": "Bagar Hiu",
+        "label": "General; Umum di: Bengkulu; Asli: Kota Bengkulu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kota Bengkulu"
+    },
+    {
+        "nama_makanan": "Bubur Lambuk",
+        "label": "General; Umum di: Bengkulu; Asli: Mukomuko",
+        "region": "General",
+        "availability": "General",
+        "origin": "Mukomuko"
+    },
+    {
+        "nama_makanan": "Kue Bay Tat",
+        "label": "General; Umum di: Bengkulu; Asli: Bengkulu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bengkulu"
+    },
+    {
+        "nama_makanan": "Pais Ikan",
+        "label": "General; Umum di: Bengkulu; Asli: Rejang Lebong",
+        "region": "General",
+        "availability": "General",
+        "origin": "Rejang Lebong"
+    },
+    {
+        "nama_makanan": "Rebung Asam Undak Liling",
+        "label": "General; Umum di: Bengkulu; Asli: Daerah pedalaman Bengkulu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Daerah pedalaman Bengkulu"
+    },
+    {
+        "nama_makanan": "Lema",
+        "label": "General; Umum di: Bengkulu; Asli: Suku Rejang",
+        "region": "General",
+        "availability": "General",
+        "origin": "Suku Rejang"
+    },
+    {
+        "nama_makanan": "Bubur Sekanak",
+        "label": "General; Umum di: Bengkulu; Asli: Kota Bengkulu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kota Bengkulu"
+    },
+    {
+        "nama_makanan": "Lemang Tapai",
+        "label": "General; Umum di: Bengkulu; Asli: Kabupaten Kaur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kabupaten Kaur"
+    },
+    {
+        "nama_makanan": "Kue Lepek Binti",
+        "label": "General; Umum di: Bengkulu; Asli: Bengkulu Selatan",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bengkulu Selatan"
+    },
+    {
+        "nama_makanan": "Gulai Kemba'ang",
+        "label": "General; Umum di: Bengkulu; Asli: Daerah Rejang, Bengkulu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Daerah Rejang"
+    },
+    {
+        "nama_makanan": "Kue Perut Punai",
+        "label": "General; Umum di: Bengkulu; Asli: Kota Bengkulu",
+        "region": "General",
+        "availability": "General",
+        "origin": "Kota Bengkulu"
+    },
+    {
+        "nama_makanan": "Seruit",
+        "label": "Asli dari: Lampung",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gulai Taboh",
+        "label": "Asli dari: Lampung",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Umbu",
+        "label": "Asli dari: Lampung",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Rawon",
+        "label": "General; Asli dari: Jawa Timur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Sego Tumpang",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Brem",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Lontong Kupang",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Tahu Takwa",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Bandeng Asap",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Rujak Cingur",
+        "label": "General; Asli dari: Jawa Timur",
+        "region": "General",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Getuk Pisang",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Enting-Enting Geti",
+        "label": "Asli dari: Jawa Timur",
+        "region": "Unknown",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Ambokueh",
+        "label": "Region: Jawa Barat",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Awug",
+        "label": "Region: Jawa Barat",
+        "region": "Jawa Barat",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gehu Jeletot",
+        "label": "General; Region: Jawa Barat",
+        "region": "Jawa Barat",
+        "availability": "General",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Gandus",
+        "label": "Region: Jambi",
+        "region": "Jambi",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Cerorot",
+        "label": "Region: Lombok",
+        "region": "Lombok",
+        "availability": "Specific",
+        "origin": "Unknown"
+    },
+    {
+        "nama_makanan": "Soto Betawi",
+        "label": "General; Umum di: DKI Jakarta; Asli: Betawi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Ayam Betutu",
+        "label": "General; Umum di: Bali; Asli: Gilimanuk",
+        "region": "General",
+        "availability": "General",
+        "origin": "Gilimanuk"
+    },
+    {
+        "nama_makanan": "Kerak Telor",
+        "label": "General; Umum di: DKI Jakarta; Asli: Betawi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Betawi"
+    },
+    {
+        "nama_makanan": "Ayam Pop",
+        "label": "General; Umum di: Sumatra Barat; Asli: Bukittinggi",
+        "region": "General",
+        "availability": "General",
+        "origin": "Bukittinggi"
+    },
+    {
+        "nama_makanan": "Rujak Aceh",
+        "label": "General; Umum di: Aceh; Asli: Banda Aceh",
+        "region": "General",
+        "availability": "General",
+        "origin": "Banda Aceh"
+    }
+]

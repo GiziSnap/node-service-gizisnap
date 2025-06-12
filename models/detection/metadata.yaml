@@ -1,0 +1,41 @@
+description: Ultralytics YOLO11n model trained on GiziSnap_V56_YOLO_Original_Annotations/data.yaml
+author: Ultralytics
+date: '2025-06-12T04:49:23.915322'
+version: 8.3.139
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: ayam geprek
+  1: ayam goreng
+  2: ayam pop
+  3: bakso
+  4: dendeng batokok
+  5: gado-gado
+  6: gulaitambusu
+  7: lemea
+  8: mie ayam
+  9: nasi goreng
+  10: pendap
+  11: rawon
+  12: rendang
+  13: sate ayam madura
+  14: sayur asam
+  15: sayur sop
+  16: soto
+  17: taichan
+  18: telur dadar padang
+  19: telur sambal
+  20: tumis kangkung
+  21: urap sayur
+args:
+  batch: 1
+  half: false
+  int8: false
+  nms: false
+channels: 3
